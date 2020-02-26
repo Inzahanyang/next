@@ -1,11 +1,10 @@
 import Link from 'next/link';
-import Header from '../comps/Header';
-import Layout from '../comps/MyLayout';
+import Layout from '../components/MyLayout';
 
 export default function Index() {
   return (
     <Layout>
-      <p>Hello Next.js</p>
+      <p>Hello kimyangwoo</p>
     </Layout>
   );
 }
