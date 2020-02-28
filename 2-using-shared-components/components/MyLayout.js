@@ -1,18 +1,16 @@
 import Header from './Header';
 
-const layoutStyle = {
+const layoutstyle = {
   margin: 20,
   padding: 20,
   border: '1px solid #DDD'
 };
 
-const withLayout = Page => {
-  return () => (
-    <div style={layoutStyle}>
-      <Header />
-      <Page />
-    </div>
-  );
-};
+const Layout = props => (
+  <div style={layoutstyle}>
+    <Header />
+    {props.content}
+  </div>
+);
 
-export default withLayout;
+export default Layout;
